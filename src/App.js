@@ -13,7 +13,7 @@ import ProtectedHabotAdminPortal from "./component/ProtectedProjectHabotAdminPor
 
 function App() {
   return (
-    <Router basename="portfolio-ui-ux">
+    <Router basename="portfolio">
       <div
         style={{
           display: "flex",
@@ -34,7 +34,7 @@ function App() {
             <Route path="slovo" element={<Slovo />} />
             {/* Redirect /resume to the PDF */}
             <Route path="/resume" element={() => { 
-              window.location.href = "/portfolio-ui-ux/Mahima_Verma.pdf"; 
+              window.location.href = "/portfolio/Mahima_Verma.pdf"; 
               return null; 
             }} />
           </Routes>
